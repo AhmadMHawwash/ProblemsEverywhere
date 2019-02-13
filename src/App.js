@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import cases from './cases';
+import cases from './Problems';
 
 const styles = {
   headers: {
