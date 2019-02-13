@@ -1,0 +1,38 @@
+[
+    {
+        "input":{
+            "array": [
+                1,2,3,4,5,6
+            ],
+            "k": 4 
+        },
+        "output": true
+    },
+    {
+        "input":{
+            "array": [
+                -1,2,-3,4,5,6100
+            ],
+            "k": -1
+        },
+        "output": true
+    },
+    {
+        "input":{
+            "array": [
+                
+            ],
+            "k": 4
+        },
+        "output": false
+    },
+    {
+        "input":{
+            "array": [
+                5,6,8,12
+            ],
+            "k": 4
+        },
+        "output": false
+    }
+]
