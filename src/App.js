@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import cases from './cases';
-import { Problem1 } from './cases/Problem1';
 
 const styles = {
   headers: {
@@ -77,7 +76,7 @@ class App extends Component {
     total: 1
   };
   state = {
-
+    ProblemComponent: null
   };
   render() {
     const { succeeded, total } = this.props;
