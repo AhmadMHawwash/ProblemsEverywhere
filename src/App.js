@@ -71,15 +71,10 @@ const styles = {
 }
 
 class App extends Component {
-  static defaultProps = {
-    succeeded: 0,
-    total: 1
-  };
   state = {
     ProblemComponent: null
   };
   render() {
-    const { succeeded, total } = this.props;
     const { ProblemComponent } = this.state;
     return (
       <div className="App">
@@ -88,7 +83,6 @@ class App extends Component {
           <div style={styles.headers.description}>Description</div>
           <div style={{ display: 'flex', flexDirection: 'row', flex: 1 }}>
             <div style={styles.headers.runTestCases}>Run TestCases</div>
-            <div style={styles.headers.runTestCases}>Test Cases Worked</div>
           </div>
         </div>
         <div style={styles.containers.problems}>
@@ -100,7 +94,6 @@ class App extends Component {
                   <div style={styles.description}>{problem.desc.description}</div>
                   <div style={{ display: 'flex', flexDirection: 'row', flex: 1 }}>
                     <button onClick={() => this.setState({ ProblemComponent: problem.comp })} style={styles.runTestCases}>Run TestCases</button>
-                    <div style={styles.runTestCases}>{succeeded} out of {total}</div>
                   </div>
                 </div>
               )
