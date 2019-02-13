@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import cases from './Problems';
 
 const styles = {
@@ -89,7 +88,7 @@ class App extends Component {
           {
             cases.Problems.map(problem => {
               return (
-                <div style={styles.containers.problem}>
+                <div key={problem.desc.title} style={styles.containers.problem}>
                   <div style={styles.title}>{problem.desc.title}</div>
                   <div style={styles.description}>{problem.desc.description}</div>
                   <div style={{ display: 'flex', flexDirection: 'row', flex: 1 }}>

@@ -1,6 +1,6 @@
 import testcases from './testcases.json'
 
-function hashMapArrayBasedOnKey(array: number[], k: number) {
+const hashMapArrayBasedOnKey = (array: number[], k: number) => {
     return array.reduce((acc, num) => {
         acc[num] = k - num;
         return acc;
