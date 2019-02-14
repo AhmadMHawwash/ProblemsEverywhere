@@ -1,5 +1,7 @@
 # ProblemsEverywhere
 
+This project was made to solve programming challenges daily
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
