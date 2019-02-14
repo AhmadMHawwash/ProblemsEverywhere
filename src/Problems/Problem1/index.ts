@@ -27,10 +27,13 @@ const getTestsCoverage = (expected: boolean[], actual: boolean[]): number => {
 }
 
 export const Problem1 = () => {
-    const answers: boolean[] = [];
+    const actual: boolean[] = [];
+    const expected: boolean[] = [];
+    
     testcases.map(({ input: {array, k}, output }) => {
-        answers.push(solve(array, k));
+        actual.push(solve(array, k));
+        expected.push(output);
     });
 
-    return "coverage equal: " + getTestsCoverage(testcases.map(testcase => testcase.output), answers);
+    return "coverage equal: " + getTestsCoverage(expected, actual);
 }
