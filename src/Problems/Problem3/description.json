@@ -1,0 +1,4 @@
+{
+    "title": "Serilaize deserialize binary Tree",
+    "description": "Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and deserialize(s), which deserializes the string back into the tree.\n For example, given the following Node class \n class Node:\n def __init__(self, val, left=None, right=None):\n self.val = val\n self.left = left\n self.right = right"
+}
